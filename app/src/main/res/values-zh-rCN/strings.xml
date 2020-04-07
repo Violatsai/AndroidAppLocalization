@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?><resources>
+    <string name="app_name">安静！</string>
+
+    <string name="automation">自动化</string>
+    <string name="double_wave">挥两次：</string>
+    <string name="single_wave">挥一次或：\n向下滑动</string>
+    <string name="phoneFaceDown">保持手机：\n面朝下</string>
+    <string name="silentOn">从平面拾取时\n静音开启</string>
+    <string name="automaticSpeakerToggle">自动扬声器切换</string>
+    <string name="blacklistOrWhitelist">黑名单或白名单</string>
+    <string name="blacklist">黑名单</string>
+    <string name="whitelist">白名单</string>
+    <string name="whenPhoneIsRinging">电话铃响时（来电）</string>
+    <string name="whileInCall">通话中或去电时</string>
+
+    <string name="forAutomaticSpeaker">自动打开/关闭扬声器</string>
+    <string name="startBy">先点击下方浮动按钮</string>
+    <string name="IHateTo">有句话不知当讲不当讲</string>
+    <string name="theMasterSwitchOff">你主开关没开</string>
+    <string name="help">帮助</string>
+    <string name="instructions">说明：</string>
+    <string name="contribute">参与</string>
+    <string name="rate">评分</string>
+    <string name="about">关于</string>
+    <string name="privacyPolicy">隐私政策</string>
+    <string name="donate">捐助</string>
+    <string name="thankYou">谢谢！</string>
+    <string name="addContact">添加联系人</string>
+    <string name="setTime">设置时间</string>
+    <string name="setDate">设置日期</string>
+    <string name="repeatCall">重复拨打</string>
+    <string name="date">日期： </string>
+    <string name="time">时间： </string>
+    <string name="informationIncomplete">信息不完整</string>
+    <string name="gotIt">可！</string>
+    <string name="consecutiveWaveThreshold">连续挥手间隔： </string>
+    <string name="sec">秒</string>
+    <string name="defaultSec">默认1.2 秒</string>
+    <string name="scheduling">排程</string>
+    <string name="iDontCare">我不在乎</string>
+    <string name="everyTwentyFourHours">每 24 小时</string>
+    <string name="every">每  </string>
+    <string name="hour">  小时</string>
+    <string name="hours">  小时</string>
+
+    <string name="pressBacktoCancel">再按一次返回取消</string>
+
+    <string name="callControlAndAutomation">通话控制和自动化</string>
+
+    <string name="createdBy">作者：Ritwick Verma。他喜欢编码（学习中），是大学生，但平时不好好学习，大部分时间很闲。应用程式版本：v</string>
+    <string name="master_switch">主开关\t</string>
+    <string name="instructionstextccanda">1.挥一次：\n在接近传感器（通常位于前置摄像头附近）上方挥手，从列表中选择一项功能告诉我下一步。挥什么都行。一本书也行。您也可以将手机向下翻，所选功能就会执行。如果您将手机放在耳边（接听电话时很有用），作用也相同\n\n 2.挥两次：\n以小于1.2秒（默认）的间隔连续两次在传感器上方挥动以执行所选功能。\n\n 3.拿起时保持静音：\n从平坦的表面拿起手机时，手机会自动保持静音。如果手机已经在移动，动作将被忽略。\n\n 4.自动扬声器切换：\n将设备从耳边移开，扬声器将自动打开。再次将设备放回耳朵，扬声器将关闭。仅在将手机靠在耳边至少一次后才起作用，以保护隐私。\n注意：\n如果连接了耳机或通过蓝牙路由了音频，则此功能无效。我都给你讲明白了！\n\n 5。保持电话面朝下：\n您可以在通话过程中通过将电话面朝下放在平面上结束通话或使麦克风静音。\n\n 黑名单-您可以将不希望自动切换扬声器的联系人列入黑名单。因此，请避免使用敏感的接触器使人尴尬！\n\n 连续挥动间隔- 设置间隔以识别为两次挥动。
+        </string>
+
+    <string name="instructionstextcs">点击左下角的加号开始安排通话。在打开的新页面中：\n 1。选择您要呼叫的联系人。\n 2。选择您要拨打电话的时间。\n 3。选择您要拨打电话的日期。\n 4。您还可以选中每天拨打电话复选框，跳过上面提到的日期。\n 5。从下拉列表中选择您要呼叫的联系人的手机号码。\n 6。如果您不希望手机在拨打电话前振动，请取消“通话前振动”复选框。\n 7。如果您不希望手机在拨打电话前先呼出联系人姓名，请取消“呼出前呼出姓名”复选框。\n注意：-在通话前选好默认SIM卡。\n\n您可以通过点击列表中的时间表来编辑当前的预定呼叫。您也可以通过从右边缘向左滑动来删除计划的呼叫。
+        </string>
+
+    <string-array name="wavelistoptions">
+        <item>什么也别干</item>
+        <item>静音电话</item>
+        <item>结束通话</item>
+        <item>接听电话</item>
+    </string-array>
+
+    <string-array name="facedownlistoptions">
+        <item>什么也别干</item>
+        <item>结束通话</item>
+        <item>麦克风静音</item>
+    </string-array>
+
+    <string name="Settings_title">设定</string>
+    <string name="Settings_shortcutlongLabel">在 ShutUp 中打开设置！</string>
+
+    <string name="CCandA_title">通话控制</string>
+    <string name="CCandA_shortcutlongLabel">打开通话控制</string>
+
+    <string name="CS_title">通话安排</string>
+    <string name="CS_shortcutlongLabel">安排电话</string>
+
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+
+    <string name="action_settings">设定</string>
+</resources>

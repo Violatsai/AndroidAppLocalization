@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?><resources>
+    <string name="app_name">ShutUp!</string>
+
+    <string name="automation">오토메이션</string>
+    <string name="double_wave">두번 흔드세요: </string>
+    <string name="single_wave">한번 흔들거나 뒤집으세요</string>
+    <string name="phoneFaceDown">전화 유지 아래로</string>
+    <string name="silentOn">평평한 표면에서 픽업시 자동</string>
+    <string name="automaticSpeakerToggle">자동 스피커 토글</string>
+    <string name="blacklistOrWhitelist">블랙리스트 화이트리스</string>
+    <string name="blacklist">블랙리스트</string>
+    <string name="whitelist">화이트리스트</string>
+    <string name="whenPhoneIsRinging">전화 울릴 때(수신)</string>
+    <string name="whileInCall">통화 중 또는 발신 중</string>
+
+    <string name="forAutomaticSpeaker">스피커 켜기/끄기</string>
+    <string name="startBy">플로팅 버튼 탭으로 시작하세요</string>
+    <string name="IHateTo">말하기 싫지만,</string>
+    <string name="theMasterSwitchOff">스위치가 꺼져있습니다</string>
+    <string name="help">도움</string>
+    <string name="instructions">소개:</string>
+    <string name="contribute">기여</string>
+    <string name="rate">평점</string>
+    <string name="about">소개</string>
+    <string name="privacyPolicy">개인정보 보호</string>
+    <string name="donate">기부</string>
+    <string name="thankYou">감사합니다!</string>
+    <string name="addContact">연락처 추가</string>
+    <string name="setTime">시간 설정</string>
+    <string name="setDate">날짜 설정</string>
+    <string name="repeatCall">다시 걸기</string>
+    <string name="date">날짜:  </string>
+    <string name="time">시각:  </string>
+    <string name="informationIncomplete">정보 부족</string>
+    <string name="gotIt">성공!</string>
+    <string name="consecutiveWaveThreshold">연속 흔들기 기준:  </string>
+    <string name="sec">초</string>
+    <string name="defaultSec">1.2초 기준</string>
+    <string name="scheduling">스케쥴</string>
+    <string name="iDontCare">상관없어요</string>
+    <string name="everyTwentyFourHours">24시간 마다</string>
+    <string name="every">매번  </string>
+    <string name="hour">  시간</string>
+    <string name="hours">  시간</string>
+
+    <string name="pressBacktoCancel">다시 눌러서 취소</string>
+
+    <string name="callControlAndAutomation">통화제어 및 자동화</string>
+
+    <string name="createdBy">작성자: 리트윅 버마 코딩을 좋아하고(여전히 공부중) 대학생이면서 학교 생활 외엔 여유를 즐겨요. 앱 버전: 5</string>
+    <string name="master_switch">마스터 스위치 \</string>
+    <string name="instructionstextccanda">1. 단파 : \n 근접 센서 (일반적으로 전면 카메라 근처에 위치)를 통해 목록에서 기능 중 하나를 선택하여 수행 할 작업을 알려줍니다. 손짓으로 무엇이든 사용할 수 있습니다. 책도 잘 작동합니다. 전화기를 아래로 내리전화기를 아래로 내리면 선택한 기능이 수행됩니다.면 선택한 기능이 수행됩니다. 전화를 ear 경우에도 마찬가지입니다 (응답 전화 중 유용) \n \n 2. 이중 파 : \n 선택된 기능을 수행하기 위해 1.2 초 (기본) 초 미만의 시간 간격으로 근접 센서를 두 번 연속으로 전파합니다. \n \n 3. 픽업시 무음 : \n 평평한 표면에서 전화를 받으면 자동으로 전화가 울립니다. 휴대 전화가 이미 움직이면 무시됩니다. \n \n 4. 자동 스피커 토글 : \n 장치가 귀에서 멀어지면 스피커폰이 자동으로 켜집니다. 기기를 다시 귀로 가져 오면 꺼집니다. 개인 정보를 보호하기 위해 전화를 한 번 이상 귀에 착용 한 후에 만 작동합니다. \ n 참고 : \ n 헤드셋이 연결되거나 오디오가 블루투스로 라우팅 된 경우에는 작동하지 않습니다. 그래서, 가렸습니다! \ n \ n 5. 전화를 아래로 놓고: \ n 평평한 표면에 전화를 대면 통화 중 종료하거나 마이크를 음소거 할 수 있습니다. \ n \ n 블랙리스트-자동 스피커 전환을 원하지 않는 연락처를 블랙리스트에 올릴 수 있습니다. 불편한 연락으로 당황스러운 상황을 피하십시오! \ n \ n 연속 흔들기-두 개의 연속파 사이의 시간 간격으로 이중파로 계산됩니다.
+        </string>
+
+    <string name="instructionstextcs">왼쪽 하단에서 더하기 기호를 눌러 통화 예약을 시작합니다. 새 페이지가 열리면 : \n 1. 연락처를 선택하세요. \n 2. 전화를 걸 시간을 선택하십시오. \n 3. 전화 걸 날짜를 선택하세요. \n 4. 매일 통화 확인란을 선택하고 이전 단계에서 날짜 언급을 건너 뛸 수도 있습니다. \n 5. 통화하려는 드롭 다운 목록에서 연락처의 휴대폰 번호를 선택합니다. \n 6. 전화를 걸기 전에 전화가 진동하지 않게하려면 \전화하기 전에 진동\확인란의 선택을 취소하십시오.\n 7. 전화를 걸기 전에 연락처 이름을 부르지 못하게하려면\전화하기 전에 이름 표시\확인란의 선택을 취소하십시오. \n 참고 :-원하는 시간 전에 전화에서 기본 SIM을 선택하십시오. 전화 걸기. \n \n 목록에서 일정을 눌러 현재 예약된 전화를 편집 할 수 있습니다. 오른쪽 가장자리에서 왼쪽으로 밀어서 예약 통화를 삭제할수 있습니다.</string>
+
+    <string-array name="wavelistoptions">
+        <item>아무것도하지 마세요</item>
+        <item>조용한 전화</item>
+        <item>통화 종료</item>
+        <item>전화 받기</item>
+    </string-array>
+
+    <string-array name="facedownlistoptions">
+        <item>아무것도하지 마세요</item>
+        <item>통화 종료</item>
+        <item>마이커 음소거</item>
+    </string-array>
+
+    <string name="Settings_title">설정</string>
+    <string name="Settings_shortcutlongLabel">ShutUp에서 설정하세요!</string>
+
+    <string name="CCandA_title">통화 제어</string>
+    <string name="CCandA_shortcutlongLabel">공개 통화 제어</string>
+
+    <string name="CS_title">통화 예약</string>
+    <string name="CS_shortcutlongLabel">통화 예약</string>
+
+    <string name="navigation_drawer_open">탐색 창 열기</string>
+    <string name="navigation_drawer_close">탐색 창 닫기</string>
+
+    <string name="action_settings">설정</string>
+</resources>

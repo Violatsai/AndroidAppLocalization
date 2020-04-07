@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:clipToPadding="false"
+            android:id="@+id/settingsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:clipToPadding="false">
+
+        <TextView
+            android:id="@+id/phoneringingsmalltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:text="@string/whenPhoneIsRinging"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/singlewave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/single_wave"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneringingsmalltext"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <Spinner
+            android:id="@+id/singlelist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:animateLayoutChanges="false"
+            android:spinnerMode="dialog"
+            app:layout_constraintBottom_toTopOf="@+id/doublelist"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toRightOf="@+id/singlewave"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneringingsmalltext"
+            app:layout_constraintVertical_bias="0.5"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <View
+            android:id="@+id/view1"
+            style="@style/Divider"
+            android:layout_width="0dp"
+            android:layout_height="0.4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="?android:listDivider"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singlewave" />
+
+        <TextView
+            android:id="@+id/doublewave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="@string/double_wave"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/singlewave"
+            app:layout_constraintTop_toBottomOf="@+id/singlewave"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <Spinner
+            android:id="@+id/doublelist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="24dp"
+            android:animateLayoutChanges="false"
+            android:spinnerMode="dialog"
+            app:layout_constraintBottom_toBottomOf="@+id/doublewave"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/singlelist"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/doublewave"
+            app:layout_constraintVertical_bias="0.5"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <View
+            android:id="@+id/view2"
+            style="@style/Divider"
+            android:layout_width="0dp"
+            android:layout_height="0.4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doublewave"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <CheckBox
+            android:id="@+id/silentonpickcheckbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:onClick="silentonpickcheckboxclicked"
+            android:paddingRight="8sp"
+            android:text="@string/silentOn"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/doublewave"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doublewave"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?android:listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/phoneoutgoingorincallsmalltext"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/silentonpickcheckbox"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/phoneoutgoingorincallsmalltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/whileInCall"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="@+id/view3"
+            app:layout_constraintRight_toRightOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/silentonpickcheckbox"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <CheckBox
+            android:id="@+id/speakeroncheckbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:onClick="speakeroncheckboxclicked"
+            android:paddingTop="5sp"
+            android:paddingRight="8sp"
+            android:paddingBottom="5sp"
+            android:text="@string/automaticSpeakerToggle"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/silentonpickcheckbox"
+            app:layout_constraintRight_toRightOf="@+id/silentonpickcheckbox"
+            app:layout_constraintTop_toBottomOf="@+id/phoneoutgoingorincallsmalltext"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/blacklistexpandinglayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintLeft_toLeftOf="@+id/speakeroncheckbox"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speakeroncheckbox">
+
+            <TextView
+                android:id="@+id/blacklistwhitelisttext1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="blacklistwhitelisttextclicked"
+                android:paddingTop="5sp"
+                android:paddingBottom="30sp"
+                android:text="@string/blacklistOrWhitelist"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/view4"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/blacklistwhitelisttext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="@string/forAutomaticSpeaker"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/blacklistwhitelisttext1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/blacklistwhitelisttext1"
+                app:layout_constraintVertical_bias="0.7" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="?android:listDivider"
+                app:layout_constraintBottom_toBottomOf="@+id/blacklistwhitelisttext1"
+                app:layout_constraintRight_toLeftOf="@+id/blacklistwhitelistswitch"
+                app:layout_constraintTop_toTopOf="@+id/blacklistwhitelisttext1" />
+
+            <Switch
+                android:id="@+id/blacklistwhitelistswitch"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="blacklistwhitelistswitchclicked"
+                android:paddingLeft="40sp"
+                android:paddingTop="25sp"
+                android:paddingBottom="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/blacklistwhitelisttext1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/blacklistwhitelisttext1"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/blacklistexpandinglayout"
+            app:layout_constraintLeft_toLeftOf="@+id/blacklistexpandinglayout"
+            app:layout_constraintTop_toTopOf="@+id/speakeroncheckbox"
+            app:layout_constraintVertical_bias="0.32" />
+
+        <View
+            android:id="@+id/view5"
+            style="@style/Divider"
+            android:layout_width="0dp"
+            android:layout_height="0.4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="?android:listDivider"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blacklistexpandinglayout" />
+
+        <TextView
+            android:id="@+id/flipdowntext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/phoneFaceDown"
+            android:textAppearance="@android:style/TextAppearance.Holo.Large"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@+id/speakeroncheckbox"
+            app:layout_constraintTop_toBottomOf="@+id/blacklistexpandinglayout"
+            tools:layout_constraintLeft_creator="1" />
+
+        <Spinner
+            android:id="@+id/flipdownlist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:spinnerMode="dialog"
+            app:layout_constraintBottom_toBottomOf="@+id/flipdowntext"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintLeft_toRightOf="@+id/flipdowntext"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/flipdowntext"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <View
+            android:id="@+id/view6"
+            style="@style/Divider"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="?android:listDivider"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flipdowntext"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

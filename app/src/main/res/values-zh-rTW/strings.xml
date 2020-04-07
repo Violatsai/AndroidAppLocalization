@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?><resources>
+    <string name="app_name">閉嘴！</string>
+
+    <string name="automation">自動化</string>
+    <string name="double_wave">揮兩下：</string>
+    <string name="single_wave">揮一下：</string>
+    <string name="phoneFaceDown">機面朝下</string>
+    <string name="silentOn">拿起手機時靜音</string>
+    <string name="automaticSpeakerToggle">自動擴音</string>
+    <string name="blacklistOrWhitelist">黑名單或安全名單</string>
+    <string name="blacklist">黑名單</string>
+    <string name="whitelist">安全名單</string>
+    <string name="whenPhoneIsRinging">手機鈴響（來電）</string>
+    <string name="whileInCall">通話中或撥號</string>
+
+    <string name="forAutomaticSpeaker">開啟/關閉自動擴音</string>
+    <string name="startBy">按下方按鈕開始</string>
+    <string name="IHateTo">我不想掃興，但是</string>
+    <string name="theMasterSwitchOff">你的主控制沒開</string>
+    <string name="help">協助</string>
+    <string name="instructions">說明：</string>
+    <string name="contribute">貢獻</string>
+    <string name="rate">評分</string>
+    <string name="about">關於</string>
+    <string name="privacyPolicy">隱私政策</string>
+    <string name="donate">捐款</string>
+    <string name="thankYou">感謝！</string>
+    <string name="addContact">新增聯絡人</string>
+    <string name="setTime">設定時間</string>
+    <string name="setDate">設定日期</string>
+    <string name="repeatCall">重複撥號</string>
+    <string name="date">日期： </string>
+    <string name="time">時間： </string>
+    <string name="informationIncomplete">資訊不完整</string>
+    <string name="gotIt">了解</string>
+    <string name="consecutiveWaveThreshold">持續揮手間隔： </string>
+    <string name="sec">秒</string>
+    <string name="defaultSec">預設1.2秒</string>
+    <string name="scheduling">排程</string>
+    <string name="iDontCare">我不在乎</string>
+    <string name="everyTwentyFourHours">每 24 小時</string>
+    <string name="every">每  </string>
+    <string name="hour">  小時</string>
+    <string name="hours">  小時</string>
+
+    <string name="pressBacktoCancel">再按一次返回鍵取消</string>
+
+    <string name="callControlAndAutomation">通話設定和自動化</string>
+
+    <string name="createdBy">開發者：Ritwick Verma他喜歡寫程式，在讀大學，時間很多因為不怎麼唸書。應用程式版本：v</string>
+    <string name="master_switch">主控制</string>
+    <string name="instructionstextccanda">1.揮一下：在感應器（通常在鏡頭前）上方揮一下，並從選單中選取一項動作指令。你可以揮舞任何東西。像是一本書也可以。你可以將機面朝下並選擇一項動作指令。將手機靠近耳朵也有相同效果。 \n\n 2.揮兩下：在感應器上方在1.2秒內（預設）連續揮兩下來執行動作指令。\n\n 3.拿起手機時靜音: \n 當你從平面拿起手機時，手機會自動靜音。手機如果已經在移動中，這個功能不會運作。\n\n 4.自動擴音：\n 如果手機遠離耳朵，擴音功能將自動開啟。如果手機重新靠回耳朵，擴音功能將自動關閉。您必須將手機靠在耳朵上至少一次才會開啟這個功能，這是為了保護您的隱私。\n 注意：\n 如果手機連著耳機或藍芽功能，此功能部會運作。\n\n 5.機面持續朝下：\n 您可以透過將機面朝下結束通話，或在通話時讓麥克風靜音。 \n\n 黑名單：您可以將聯絡人加入黑名單，避免自動擴音功能在通話時開啟。因此，您可以避免尷尬情況出現。 \n\n 連續揮手間隔：兩次揮手的時間間隔。
+        </string>
+
+    <string name="instructionstextcs">點擊左下角加號來開始通話排程在新頁面上：\n 1.選取想聯繫的聯絡人。\n 2.選擇想要通話的時間。\n 3.選擇想要通話的日期。\n 4.您也可以選擇每天定時通話，略過日期設定。\n 5.從下拉選單中選取聯絡人電話號碼。\n 6.若不想要手機在撥號前震動，您可以取消選取「撥號震動」。\n 7.若不想要手機在撥號前唸出聯絡人姓名，您可以取消選取「撥號前唸出聯絡人姓名」。\n 注意：您應該在通話前選擇手機預設SIM卡\n\n 你可以點擊排程名單來編輯現有的通話排程。您可以從右向左滑動來刪除排定通話。
+        </string>
+
+    <string-array name="wavelistoptions">
+        <item>不動作</item>
+        <item>靜音</item>
+        <item>結束通話</item>
+        <item>接通</item>
+    </string-array>
+
+    <string-array name="facedownlistoptions">
+        <item>不動作</item>
+        <item>結束通話</item>
+        <item>麥克風靜音</item>
+    </string-array>
+
+    <string name="Settings_title">設定</string>
+    <string name="Settings_shortcutlongLabel">在閉嘴！中開啟設定</string>
+
+    <string name="CCandA_title">通話設定</string>
+    <string name="CCandA_shortcutlongLabel">開啟通話設定</string>
+
+    <string name="CS_title">通話排程</string>
+    <string name="CS_shortcutlongLabel">排定通話</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">設定</string>
+</resources>

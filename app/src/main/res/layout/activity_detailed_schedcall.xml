@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    >
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:transitionName="fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="donebuttonpressed"
+        app:backgroundTint="#26A69A"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/tick"
+        app:useCompatPadding="true"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:transitionName="scheduledetails"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/activity_detailed_schedcall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:clipToPadding="false"
+            android:padding="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:context="com.laughingstock.ritwick.shutup.Activities.DetailedSchedcallActivity"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1">
+
+            <ImageButton
+                android:id="@+id/cancelButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:onClick="cancelbuttonpressed"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cross_dgrey"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/schlistcontactphoto"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:animateLayoutChanges="true"
+                android:clipToPadding="false"
+                android:shape="ring"
+                app:cardCornerRadius="74sp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/schcontactphotopic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="-3sp"
+                    android:layout_marginEnd="-3sp"
+                    android:layout_marginLeft="-3sp"
+                    android:layout_marginRight="-3sp"
+                    android:layout_marginStart="-3sp"
+                    android:layout_marginTop="-3sp"
+                    android:onClick="selectcontacttextclicked"
+                    android:scaleType="centerCrop"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="125dp"/>
+            </android.support.v7.widget.CardView>   -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/schlistcontactphoto"
+                android:transitionName="contactphoto"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:onClick="selectcontacttextclicked"
+                android:animateLayoutChanges="true"
+                android:clipToPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="48dp"
+                app:layout_constraintHorizontal_bias="0.497" />
+
+            <TextView
+                android:id="@+id/nametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="selectcontacttextclicked"
+
+                android:text="@string/addContact"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/schlistcontactphoto" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/topcv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:animateLayoutChanges="true"
+                android:backgroundTint="#ffffff"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nametext"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_constraintRight_creator="1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:padding="16sp"
+                    android:visibility="visible"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/timetext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        android:onClick="settimetextclicked"
+                        android:padding="10dp"
+                        android:text="@string/setTime"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="24sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/datetext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:onClick="setdatetextclicked"
+                        android:padding="10dp"
+                        android:text="@string/setDate"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="24sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/timetext"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/repeatcallcb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/repeatCall"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="16sp"
+                        app:layout_constraintLeft_toLeftOf="@+id/numtext"
+                        app:layout_constraintTop_toBottomOf="@+id/datetext" />
+
+                    <TextView
+                        android:id="@+id/numtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Call on number:"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="16sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/repeatcallsb"
+                        android:layout_marginTop="16dp"/>
+
+                    <Spinner
+                        android:id="@+id/numspinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:padding="10sp"
+                        android:spinnerMode="dialog"
+                        app:layout_constraintLeft_toRightOf="@+id/numtext"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/numtext"
+                        app:layout_constraintBottom_toBottomOf="@+id/numtext"
+                        android:layout_marginBottom="0dp"
+                        app:layout_constraintVertical_bias="0.7"/>
+
+                    <SeekBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:id="@+id/repeatcallsb"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/repeatcalltext"
+                        app:layout_constraintStart_toStartOf="@+id/repeatcallcb"
+                        android:layout_marginStart="0dp"/>
+
+                    <TextView
+                        android:id="@+id/repeatcalltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/everyTwentyFourHours"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="@+id/repeatcallcb"
+                        app:layout_constraintTop_toBottomOf="@+id/repeatcallcb"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/botcv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="9dp"
+                android:animateLayoutChanges="true"
+                android:backgroundTint="#ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topcv">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:padding="16sp">
+
+
+                    <TextView
+                        android:id="@+id/simnote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Note: Please select default SIM to call from the settings in your phone, otherwise call won't take place."
+                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="16sp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/vibratecb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:checked="true"
+                        android:text="Vibrate before calling"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="16sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/simnote"/>
+
+                    <CheckBox
+                        android:id="@+id/ringcb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:checked="true"
+                        android:text="Call out name before calling"
+                        android:textAppearance="@android:style/TextAppearance.Holo"
+                        android:textColor="@color/textColorPrimary"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/vibratecb"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

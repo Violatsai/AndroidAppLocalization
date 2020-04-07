@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">ShutUp!</string>
+
+    <string name="automation">Automation</string>
+    <string name="double_wave">Double wave :</string>
+    <string name="single_wave">Single wave or :\nFlip down</string>
+    <string name="phoneFaceDown">Phone kept :\nfacing down</string>
+    <string name="silentOn">Silent on picking up from\nflat surface</string>
+    <string name="automaticSpeakerToggle">Automatic speaker toggle</string>
+    <string name="blacklistOrWhitelist">Blacklist or Whitelist</string>
+    <string name="blacklist">Blacklist</string>
+    <string name="whitelist">Whitelist</string>
+    <string name="whenPhoneIsRinging">When phone is ringing (incoming call)</string>
+    <string name="whileInCall">While in call or during outgoing call</string>
+
+    <string name="forAutomaticSpeaker">for automatic speaker on/off</string>
+    <string name="startBy">Start by tapping that floating button below</string>
+    <string name="IHateTo">I hate to say this but,</string>
+    <string name="theMasterSwitchOff">The master switch is off</string>
+    <string name="help">Help</string>
+    <string name="instructions">Instructions:</string>
+    <string name="contribute">Contribute</string>
+    <string name="rate">Rate</string>
+    <string name="about">About</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="donate">Donate</string>
+    <string name="thankYou">Thank you!</string>
+    <string name="addContact">Add Contact</string>
+    <string name="setTime">Set Time</string>
+    <string name="setDate">Set Date</string>
+    <string name="repeatCall">Repeat call</string>
+    <string name="date">Date:  </string>
+    <string name="time">Time:  </string>
+    <string name="informationIncomplete">Information incomplete</string>
+    <string name="gotIt">Got it!</string>
+    <string name="consecutiveWaveThreshold">Consecutive wave threshold:  </string>
+    <string name="sec">sec</string>
+    <string name="defaultSec">default 1.2 sec</string>
+    <string name="scheduling">Scheduling</string>
+    <string name="iDontCare">I don\'t care</string>
+    <string name="everyTwentyFourHours">Every 24 hours</string>
+    <string name="every">Every  </string>
+    <string name="hour">  hour</string>
+    <string name="hours">  hours</string>
+
+    <string name="pressBacktoCancel">Press back again to cancel</string>
+
+    <string name="callControlAndAutomation">Call control and automation</string>
+
+    <string name="createdBy">Created by: Ritwick Verma. He likes coding (still learning) and is a college student and is mostly free as he does not study. App version: v</string>
+    <string name="master_switch">Master switch\t</string>
+    <string name="instructionstextccanda">1. Single wave:\nwave over the proximity sensor (generally located near the front camera)
+        to tell me what to do by selecting one of the functions from the list. Note that you can use anything to wave.
+        A book will also work. You can also flip the phone down and the chosen function will be performed. Same will happen
+        if you put phone on ear (useful during answer call)\n\n
+
+        2. Double wave:\nwave over the proximity sensor two times
+        consecutively with a time interval of less then 1.2 (by default) seconds to perform the selected function.\n\n
+
+        3. Silent on pick up:\nthe phone will automatically silent when you pick it up from
+        a flat surface. This will be ignored if the phone is already moving.\n\n
+
+        4. Automatic speaker toggle:\nThe
+        speaker phone will automatically turn on if the device is moved away from the ear. It will turn off if device is
+        again brought back to the ear. It will only work after putting phone on ear at least once which, is to protect privacy.\n
+        Note:\nThis does not work if headset is connected or audio is routed by bluetooth.
+        So, I\'ve got you covered!\n\n
+
+        5. Phone kept facing down:\nYou can end call or mute microphone during a call by putting phone on a flat
+        surface facing down.\n\n
+
+        Blacklist- You can blacklist contacts for which you do not want automatic speaker toggle to work.
+        Thus, prevent embarrassing situations with sensitive contacts!\n\n
+
+        Consecutive wave threshold- The time gap between two consecutive waves so that they are counted as double wave.
+        </string>
+
+    <string name="instructionstextcs">Start scheduling calls by tapping the plus symbol at the bottom left corner.
+        In the new page that opens:\n
+        1. Select the contact you want to call.\n
+        2. Select the time at which you want the call to take place.\n
+        3. Select the date at which you want the call to take place.\n
+        4. You can also select call daily checkbox and skip mentioning the date in previous step.\n
+        5. Select the mobile number of the contact from the drop down list on which you want to call.\n
+        6. Uncheck the box for \'vibrate before calling\' if you don\'t want the phone to vibrate before placing the call.\n
+        7. Uncheck the box for \'call out name before calling\' if you don\'t want the phone to call out the contact name before placing the call.\n
+        Note:- Select the default SIM on your phone before the time you want the call to take place.\n\n
+        You can edit a currently scheduled call by tapping on the schedule in the list. You can also
+        delete the scheduled call by swiping from the right edge towards left.
+        </string>
+
+    <string-array name="wavelistoptions">
+        <item>Do nothing</item>
+        <item>Silent phone</item>
+        <item>End call</item>
+        <item>Answer call</item>
+    </string-array>
+
+    <string-array name="facedownlistoptions">
+        <item>Do nothing</item>
+        <item>End call</item>
+        <item>Mute microphone</item>
+    </string-array>
+
+    <string name="Settings_title">Settings</string>
+    <string name="Settings_shortcutlongLabel">Open Settings in ShutUp!</string>
+
+    <string name="CCandA_title">Call control</string>
+    <string name="CCandA_shortcutlongLabel">Open Call control</string>
+
+    <string name="CS_title">Call Scheduling</string>
+    <string name="CS_shortcutlongLabel">Schedule a call</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
